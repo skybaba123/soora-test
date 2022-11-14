@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Inter-Regular;
+  src: url(./assets/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url(./assets/fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter-Medium;
+  src: url(./assets/fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url(./assets/fonts/Inter-SemiBold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.2;
+  font-family: Inter-Bold;
+}
+
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

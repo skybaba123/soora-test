@@ -1,0 +1,13 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid dimgray;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 7rem;
+
+  p {
+    font-family: Inter-Regular;
+  }
+}

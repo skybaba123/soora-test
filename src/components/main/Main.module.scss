@@ -1,0 +1,167 @@
+.circle {
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(165, 165, 165);
+  }
+
+  img {
+    width: 30px;
+    height: auto;
+  }
+}
+
+section {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.section-one {
+  justify-content: space-between;
+  .socials {
+    display: flex;
+    gap: 25px;
+  }
+
+  .separator {
+    img {
+      width: 300px;
+      height: auto;
+    }
+  }
+}
+
+.section-two {
+  justify-content: space-between;
+
+  .left {
+    max-width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .right {
+    p {
+      font-weight: 500;
+      font-size: 24px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-weight: 800;
+      font-size: 70px;
+      color: #0b0b0b;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .input-container {
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-radius: 30px;
+
+    input {
+      height: 100%;
+      border: none;
+      outline: 0;
+      border-radius: 30px;
+      padding: 10px;
+      background-color: #fafafa;
+      font-weight: 500;
+      font-size: 24px;
+      flex: 3;
+    }
+
+    button {
+      height: 100%;
+      border: none;
+      background-color: black;
+      border-radius: 30px;
+      color: #fff;
+      flex: 1;
+      font-weight: 500;
+      font-size: 22px;
+      cursor: pointer;
+    }
+  }
+}
+
+.socials-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-two {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    .left {
+      max-width: 100%;
+    }
+
+    .right {
+      text-align: center;
+    }
+  }
+
+  .input-container {
+    input {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .section-one {
+    display: none;
+  }
+
+  .section-two {
+    flex-direction: column-reverse;
+  }
+
+  .socials-mobile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .section-two {
+    .right {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .input-container {
+    margin-bottom: 2.1rem;
+    position: relative;
+    button {
+      position: absolute;
+      width: 200px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 15%) scale(0.7);
+    }
+  }
+}

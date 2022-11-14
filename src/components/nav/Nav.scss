@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 40px 35px 40px;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    padding: 15px 0 15px 0;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+
+    img {
+      width: 12%;
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 529px) {
+  nav {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
